@@ -368,7 +368,7 @@ position: absolute;
     height: 298px;
     width: 267px;
     bottom: -50px;
-    right: -50px;
+    right: -40px;
     filter: drop-shadow(0px 0px 26px #7666FF);
     border-radius: 10px;
 }
@@ -686,7 +686,7 @@ width: 268px;
 height: 226px;
 position: absolute;
 bottom: -50px;
-right: -50px;
+right: -10px;
 
 
 display: flex;
@@ -741,18 +741,7 @@ text-transform: uppercase;
 color: #F0CD4E;
 }
 
-.hidden-item3{
-  width: 1200px;
-  height: 160px;
-  /* yellow */
-  margin-top: 545px;
-  display: none;
 
-/* display: flex; */
-background: #F0CD4E;
-border-radius: 25px;
-align-items: center;
-}
 
 .rectangle3{
   position: relative;
@@ -766,7 +755,7 @@ align-items: center;
 .rectangle-img__img3{
 
 box-sizing: border-box;
-
+bottom: -50px;
 position: absolute;
 width: 379px;
 height: 187px;
@@ -827,6 +816,11 @@ margin-left: 20px;
   width: 1247px;
   margin-top: 40px;
 
+}
+
+.reviews-img_mob{
+  margin-top: 40px;
+  display: none;
 }
 
 .article-btn:visited{
@@ -1073,7 +1067,8 @@ color: #FDFDFD;
 
 }
 
-.free-trial__offer-group img{
+.pop{
+  align-items: center;
   width: 376px;
   height: 568px;
   margin-right: 20px;
@@ -1521,6 +1516,11 @@ transform: rotate(0.1deg);
 
 @media(max-width:1200px){
 
+  #about2{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
   .navbar{
     width: 1100px;
   }
@@ -1546,6 +1546,9 @@ transform: rotate(0.1deg);
   .about-item__article{
     padding-left: 0;
   }
+  .about-item__article2{
+    padding-right: 0;
+  }
 
   .hidden-item{
     margin-top: 400px;
@@ -1557,93 +1560,56 @@ transform: rotate(0.1deg);
 }
 @media(max-width:1000px){
 
-  .navbar{
-    width: 900px;
-  }
-  .counts{
-    display: flex;
+  .free-trial__offer-group{
     flex-direction: column;
   }
-
-  #about2{
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
+.pricing{
+  margin-bottom: 1000px;
 }
-@media(max-width:768px){
-
-  .navbar{
-    width: 700px;
+  .pricing_item{
+    width: 370px;
+    height: 464px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
-
-  .main-text{
-    text-align: center;
+  .pricing_item-small{
+    margin-top: 0;
+    width: 370px;
   }
-
-  .main-section{
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
+  .pricing_btn2{
+    margin-top: 50px
   }
-
-  .navbar-list{ 
-    display: none;
-  }
-  
-  .counts{
+  #fgroup-item__list{
+    margin-top: 30px;
     
-    margin-top: 100px;
-    align-items: center;
   }
 
-  
-
-.video-container{
-  height: 381px;
-}
-.video-container{
-  margin-top: 0;
-  
-}
-
-}
-
-.main-text{
-  align-items: center;
-}
-
-
-
-@media(max-width:550px){
-  .rectangle{
-    height: 237px;
-    width: 344px;
-  }
-  .rectangle-img__img{
-    height: 177px;
-    width: 159px;
-    right: -30px;
-  }
-  .rectangle-img{
-    height: 208px;
-    width: 303px;
-  }
-  .about-item__article{
-    display: flex;
+  .pricing_item-group{
     flex-direction: column;
-    padding-left: 0;
-    height: 266px;
-    width: 350px;
   }
 
-  .about-section{
-    align-items: center;
+  .free-trial__offer-group-item{
+    width: 370px;
+    margin-bottom: 30px;
+    margin-right: 0;
+
+  }
+  .fgoup__btn{
+    margin-top: 100px;
+  }
+  .pop{
+    width: 370px;
+    margin-bottom: 30px;
+    margin-right: 0;
   }
 
   .hidden-item{
+    margin-left: 200px;
     margin-top: 520px;
-
+    display: none;
+    flex-direction: column;
     height: 285px;
     width: 350px;
   }
@@ -1651,9 +1617,14 @@ transform: rotate(0.1deg);
 
   .hidden-item3{
     margin-top: 780px;
-
+    display: none;
+    flex-direction: column;
     height: 285px;
     width: 350px;
+  }
+
+  .free-trial{
+    align-items: center;
   }
 
   
@@ -1675,17 +1646,9 @@ text-align: center;
 color: #2A2362;
 
   }
-  .hidden-item{
-    
-    display: flex;
-    flex-direction: column;
-  }
+  
 
-  .hidden-item3{
-    
-    display: flex;
-    flex-direction: column;
-  }
+ 
   .hidden-item__btn-group{
     flex-direction: column;
     margin-left: 0;
@@ -1733,6 +1696,131 @@ text-align: center;
 
 color: #4F4D67;
   }
+
+  .navbar{
+    width: 900px;
+  }
+  .counts{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media(max-width:768px){
+
+
+
+
+
+  .navbar{
+    width: 700px;
+  }
+
+  .main-text{
+    text-align: center;
+  }
+
+  .main-section{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .navbar-list{ 
+    display: none;
+  }
+  
+  .counts{
+    
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  
+
+.video-container{
+  height: 381px;
+}
+.video-container{
+  margin-top: 0;
+  
+}
+
+}
+
+.main-text{
+  align-items: center;
+}
+
+
+
+@media(max-width:550px){
+
+  .reviews-img_mob{
+    display: flex;
+  }
+  .reviews-img{
+    display: none;
+  }
+  .rectangle{
+    height: 237px;
+    width: 344px;
+  }
+  .rectangle2{
+    height: 237px;
+    width: 344px;
+  }
+  
+  .rectangle3{
+    height: 237px;
+    width: 344px;
+  }
+  
+  
+  .rectangle-img__img{
+    height: 177px;
+    width: 159px;
+    right: -30px;
+  }
+  .rectangle-img__img2{
+    height: 132px;
+    width: 155px;
+
+  }.rectangle-img__img3{
+    height: 110px;
+    width: 222px;
+   
+  }
+  .rectangle-img{
+    height: 208px;
+    width: 303px;
+  }
+  .about-item__article{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    height: 266px;
+    width: 350px;
+  }
+
+  .about-item__article2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    height: 266px;
+    width: 350px;
+  }
+
+  .about-section{
+    align-items: center;
+  }
+
+ 
   .redbananaz {
     font-family: 'Kodchasan';
 font-style: normal;
@@ -1757,7 +1845,9 @@ color: #FB4949;
   align-items: center;
  }
 
- 
+ .hidden-item{
+  margin-left: 0;
+ }
  
 
   .navbar{
@@ -1783,7 +1873,44 @@ color: #FB4949;
     width: 400px;
     
   }
- 
+  .reviews-title{
+    width: 322px;
+height: 80px;
+    font-family: 'Work Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 40px;
+/* or 125% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+/* pink */
+
+
+  }
+
+  .reviews-text{
+    width: 346px;
+height: 21px;
+
+/* text mob */
+
+font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+/* identical to box height, or 140% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #8B8EA9;
+  }
 }
 
 @media(max-width:390px){
