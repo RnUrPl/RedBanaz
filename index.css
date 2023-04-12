@@ -74,8 +74,14 @@ color: #FDFDFD;
 
 }
 
-.redbananaz{
+.redbananaz:hover{
+  cursor: pointer;
+  color:grey;
+  transition: all 0.3s ease;
+}
 
+.redbananaz{
+  text-decoration: none;
     font-family: 'Kodchasan';
     font-style: normal;
     font-weight: 600;
@@ -148,8 +154,15 @@ height: 26px;
 border-radius: 30px;
 }
 
+.try-now:hover{
+  cursor: pointer;
+  background-color: grey;
+  color: #333;
+}
+
 
 .try-now__text{
+  text-decoration: none;
     font-family: 'Work Sans';
 font-style: normal;
 font-weight: 700;
@@ -204,6 +217,10 @@ align-items: center;
 color: #8B8EA9;
 }
 
+.start-learning{
+  text-decoration: none;
+}
+
 .main-text__btn{
     margin-top: 20px;
     display: flex;
@@ -214,6 +231,11 @@ color: #8B8EA9;
     height: 40px;
     background: #7666FF;
     border-radius: 8px;
+}
+.main-text__btn:hover{
+  cursor: pointer;
+  background-color: grey;
+  color: #333;
 }
 .svgbutton-arrow-right-icon {
     position: relative;
@@ -1228,7 +1250,7 @@ color: #FDFDFD;
 
 .fgoup__btn{
   box-sizing: border-box;
-
+  text-decoration: none;
 /* Auto layout */
 
 display: flex;
@@ -1286,7 +1308,7 @@ color: #F55EE6;
 
 .fgoup__btn2{
   display: flex;
-
+  text-decoration: none;
 
 
 
@@ -1471,7 +1493,12 @@ color: #FFFFFF;
 
 }
 
+#lolo{
+  margin-top: 150px;
+}
+
 .pricing_btn{
+  text-decoration: none;
   display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -1617,8 +1644,7 @@ transform: rotate(0.1deg);
   .advantages-article{
     margin-left: 0;
     margin-top: 75px;
-    width: 370px;
-height: 554px;
+
   }
 
   .free-trial__offer-group{
@@ -1638,6 +1664,9 @@ height: 554px;
   .pricing_item-small{
     margin-top: 0;
     width: 370px;
+  }
+  #lolo{
+    margin-top: 50px;
   }
   .pricing_btn2{
     margin-top: 50px
@@ -1774,8 +1803,11 @@ color: #4F4D67;
 }
 @media(max-width:768px){
 
+  .advantages-article{
 
-
+    width: 370px;
+height: 554px;
+  }
 
 
   .advantages-article__text{
@@ -1819,9 +1851,23 @@ height: 86px;
 
   .main-text{
     text-align: center;
+    align-items: center;
+  }
+
+  .adv__title{
+    font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+  }
+
+  .adv_text{
+    font-weight: 400;
+font-size: 12px;
+
   }
 
   .main-section{
+    
     display: flex;
     flex-direction: column;
     flex-direction: column-reverse;
@@ -1850,13 +1896,27 @@ height: 86px;
 }
 
 .main-text{
-  align-items: center;
+  align-items: left;
 }
 
 
 
 @media(max-width:550px){
 
+  .swiper-container{
+ 
+
+    margin-left: 20px;
+    width: 345px;
+    height: 250px;
+  }
+
+  .mom{
+    align-items: center;
+
+    width: 345px;
+    height: 160px;
+  }
   .reviews-img_mob{
     display: flex;
   }
@@ -1966,7 +2026,7 @@ color: #FB4949;
 
 @media(max-width:420px){
   .navbar{
-    width: 400px;
+    width: 370px;
     
   }
   .reviews-title{
@@ -2039,7 +2099,7 @@ color: #FB4949;
  
 
   .navbar{
-    width: 370px;
+    width: 320px;
     
   }
  
