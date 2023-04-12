@@ -877,7 +877,9 @@ color: #F55EE6;
 .advantages-section{
   margin-top: 77px;
 }
-
+.swiper-scrollbar-drag{
+  background-color:#7666FF ;
+}
 .advantages{
   display: flex;
   flex-direction: column;
@@ -902,19 +904,72 @@ text-align: center;
 color: #FDFDFD;
 }
 
+.adv-wrap{
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.adv-group{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+.adv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+}
+
+.adv__title{
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 30px;
+
+
+color: #FDFDFD;
+}
+
+.adv_text{
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* or 119% */
+margin-top: 10px;
+
+display: flex;
+align-items: center;
+
+color: #8B8EA9;
+}
+.swiper-wrapper{
+  display: flex;
+  align-items: center;
+}
 .swiper-container {
   width: 582px;
   height: 270px;
 }
 
-.swiper-slide img {
+.mom {
   width: 582px;
 height: 270px;
   object-fit: cover;
 }
 
 .swiper-slide {
-
+  align-items: center;
+  display: flex;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -923,19 +978,14 @@ height: 270px;
   opacity: 1;
 }
 
-
-
 .swiper-scrollbar {
+margin-top: 65px;
+  height: 4px;
 
-  width: 4px;
-  height: 500px;
-  background-color: #ddd;
+  background-color: #3A3756;
   border-radius: 2px;
 }
-.swiper-scrollbar-drag {
-  background-color: #333;
-  border-radius: 2px;
-}
+
 
 .progres-bar__wrapper{
   display: flex;
@@ -1560,6 +1610,17 @@ transform: rotate(0.1deg);
 }
 @media(max-width:1000px){
 
+  .advantages-content{
+    align-items: center;
+    flex-direction: column;
+  }
+  .advantages-article{
+    margin-left: 0;
+    margin-top: 75px;
+    width: 370px;
+height: 554px;
+  }
+
   .free-trial__offer-group{
     flex-direction: column;
   }
@@ -1715,6 +1776,41 @@ color: #4F4D67;
 
 
 
+
+
+  .advantages-article__text{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+display: flex;
+align-items: center;
+  }
+
+  .logo-article-title{
+    font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+  }
+
+  .logo-article-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  
+
+  .pep{
+    width: 86px;
+height: 86px;
+  }
+
+  .advantages-logo{
+    margin-top: 20px;
+  }
 
 
   .navbar{

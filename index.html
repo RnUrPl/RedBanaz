@@ -350,20 +350,49 @@
             <div class="advantages">
                 <span class="advantages-title">Don't lose your money</span>
                 <div class="advantages-content">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="./public/free-trial---1-1@2x.png" alt="Slide 1">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./public/free-trial---1-1@2x.png" alt="Slide 2">
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="./public/free-trial---1-1@2x.png" alt="Slide 3">
-                          </div>
+                    <div class="adv-wrap">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="./public/free-trial---1-1@2x.png" class="mom">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./public/lol1.png" class="mom">
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="./public/lol2.png" class="mom">
+                              </div>
+                            </div>
+                            <div class="swiper-scrollbar" style="position: relative;"></div>
                         </div>
-                        <div class="swiper-scrollbar"></div>
-                        
+                        <div class="adv-group">
+                            <div class="adv">
+                                <div class="adv__title">Free trial</div>
+                                <div class="adv_text">
+                                    <br/>
+                                    Make sure of the <br/>
+                                    quality of the <br/>
+                                    product yourself.
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <div class="adv__title">Contract<br/>conclusion</div>
+                                <div class="adv_text">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;We enter into ,<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;a contract with every<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;client and send the<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;original to you
+                                </div>
+                            </div>
+                            <div class="adv">
+                                <div class="adv__title">Full <br/>automation</div>
+                                <div class="adv_text">Thanks to our <br/>
+                                    software, you can <br/>
+                                    automatically trade</br>
+                                    and save your time
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="advantages-article">
                         <span class="advantages-article__text">
@@ -382,7 +411,7 @@
                             completely for free. Take it and try it out.”<br/>
                         </span>
                         <div class="advantages-logo">
-                            <img src="./public/photo-container@2x.png"/>
+                            <img src="./public/photo-container@2x.png" class="pep"/>
                             <div class="advantages-logo-article">
                                 <div class="logo-article-title">CEO Founder</div>
                                 <div class="logo-article-text">of Red Bananaz</div>
@@ -655,18 +684,35 @@ articleBtn.addEventListener('click', () => {
     <script>
   var mySwiper = new Swiper('.swiper-container', {
   direction: 'horizontal',
-
-  autoplay: {
-    delay: 5000,
-  },
-  slidesPerView: 1,
-  spaceBetween: 0,
-
-  slideToClickedSlide: true,
+  dragClass: 'custom-scrollbar-drag',
+    sPerView: 1,
+    dragClass: 'custom-scrollbar-drag',
+    trackClass: 'custom-scrollbar-track',
+    thumbClass: 'custom-scrollbar-thumb',
+    progressbarOpposite: true,
+    centeredSlides:true,
+ 
   scrollbar: {
     el: '.swiper-scrollbar',
   },
 });
+
+function changeDragColor(activeSlide) {
+  var dragEl = document.querySelector('.swiper-scrollbar-drag');
+  if (activeSlide === 0) {
+    dragEl.style.backgroundColor = '#7666FF';
+  } else if (activeSlide === 1) {
+    dragEl.style.backgroundColor = '#F0CD4E';
+  } else if (activeSlide === 2) {
+    dragEl.style.backgroundColor = '#F55EE6';
+  }
+}
+mySwiper.on('slideChange', function () {
+  var activeSlide = mySwiper.activeIndex;
+  console.log(activeSlide)
+  changeDragColor(activeSlide);
+});
+
 
 
 
