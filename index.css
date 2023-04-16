@@ -293,6 +293,7 @@ color: #8B8EA9;
 .video{
   align-items: center;
     flex:1;
+    margin-left: 50px;
 }
 .video-container{
 
@@ -916,6 +917,10 @@ margin-left: 20px;
 }
 .look-closer:visited{
   text-decoration: none;
+}
+
+.adv:hover{
+  cursor: pointer;
 }
 
 .contractbtn{
@@ -1997,6 +2002,10 @@ font-size: 12px;
 
 
 @media(max-width:550px){
+
+  .video{
+    margin-left: 0;
+  }
  .main-back{
  right: -155px;
  }

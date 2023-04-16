@@ -62,9 +62,10 @@
                 
                 <div class="video">
                     <div class="video-container">
-                        <iframe class="iframe" src="https://www.youtube.com/embed/Gu01z47F_CY?autoplay=1&mute=1&controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="iframe" src="https://www.youtube.com/embed/Gu01z47F_CY?autoplay=1&mute=0&controls=0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
 
                         <div class="main-back"></div>
+
                     </div>
                 </div>
             </div>
@@ -368,7 +369,7 @@
                             <div class="swiper-scrollbar" style="position: relative;"></div>
                         </div>
                         <div class="adv-group">
-                            <div class="adv">
+                            <div id="adv1" class="adv">
                                 <div class="adv__title">Free trial</div>
                                 <div class="adv_text">
                                     <br/>
@@ -377,7 +378,7 @@
                                     product yourself.
                                 </div>
                             </div>
-                            <div class="adv">
+                            <div id="adv2" class="adv">
                                 <div class="adv__title">Contract<br/>conclusion</div>
                                 <div class="adv_text">
                                     &nbsp;&nbsp;&nbsp;&nbsp;We enter into ,<br/>
@@ -386,7 +387,7 @@
                                     &nbsp;&nbsp;&nbsp;&nbsp;original to you
                                 </div>
                             </div>
-                            <div class="adv">
+                            <div id="adv3" class="adv">
                                 <div class="adv__title">Full <br/>automation</div>
                                 <div class="adv_text">Thanks to our <br/>
                                     software, you can <br/>
@@ -864,6 +865,29 @@ mydiv3.addEventListener('click', function() {
     isClicked3 = true;
   }
 });
+
+            </script>
+            <script>
+                const advBlocks1 = document.getElementById('adv1');
+                const advBlocks2 = document.getElementById('adv2');
+                const advBlocks3 = document.getElementById('adv3');
+
+
+// добавить обработчик для каждого блока adv
+advBlocks1.addEventListener('click', () => {
+
+    mySwiper.slideTo(0);
+  });
+  advBlocks2.addEventListener('click', () => {
+
+mySwiper.slideTo(1);
+});
+
+advBlocks3.addEventListener('click', () => {
+
+mySwiper.slideTo(2);
+});
+
 
             </script>
 </html>
