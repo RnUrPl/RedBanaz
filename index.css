@@ -2238,9 +2238,10 @@ color: #FB4949;
 font-size: 32px;
 line-height: 40px;
  }
-  /* .adv-group{
-    margin-right: 180px;
-  } */
+  .adv-group{
+    margin-left: 20px;
+    gap:25px
+  }
   .adv-group .swiper-slide{
     opacity: 1;
   }
