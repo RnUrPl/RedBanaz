@@ -102,9 +102,11 @@ color: #FDFDFD;
 }
 
 .redbananaz:hover{
+
   cursor: pointer;
-  color:grey;
-  transition: all 0.3s ease;
+  color: rgb(163, 0, 0);
+  transition: all 0.1s ease;
+
 }
 
 .redbananaz{
@@ -186,10 +188,9 @@ border-radius: 30px;
 }
 
 .try-now__red{
-  margin-top: 75px;
+
   margin-right: 30px;
   display: flex;
-  align-items: center;
 
 
 display: flex;
@@ -203,6 +204,12 @@ border-radius: 30px;
 .try-now:hover{
   cursor: pointer;
   background-color: #4335c5;
+  transition: all 0.1s ease;
+}
+
+.try-now__red:hover{
+  cursor: pointer;
+  background-color: rgb(163, 0, 0);
   transition: all 0.1s ease;
 }
 
@@ -1702,18 +1709,22 @@ border-radius: 8px;
 }
 
 .foooter-section{
+
+
   margin-top: 140px;
+  background: #1B192C;
+  
+border-radius: 0px;
+height: 186px;
+width: 100%;
 }
 
 .footer{
 
-  background: #1B192C;
-border-radius: 0px;
-height: 186px;
-width: 100%;
 display: flex;
   flex-direction: row;
 }
+
 
 .line{
   border: 2px solid #24213A;
@@ -2040,6 +2051,10 @@ font-size: 12px;
 
 
 @media(max-width:550px){
+
+  .footer{
+    display: flex;
+  }
 
   .footer-logo{
     margin-left: 150px;
