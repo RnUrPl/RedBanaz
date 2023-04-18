@@ -25,6 +25,7 @@ body {
   }
 
 .container {
+  overflow-x: hidden;
     max-width: 1247px; /* set the maximum width of the container */
     margin: 0 auto; /* center the container horizontally */
     padding: 0 15px; /* add padding to the left and right sides of the container */
@@ -880,7 +881,7 @@ font-size: 40px;
 line-height: 47px;
 /* identical to box height, or 118% */
 
-display: flex;
+
 align-items: center;
 text-align: center;
 
@@ -1047,7 +1048,7 @@ font-size: 40px;
 line-height: 47px;
 /* identical to box height, or 118% */
 
-display: flex;
+
 align-items: center;
 text-align: center;
 
@@ -1165,6 +1166,7 @@ border-radius: 0px
 }
 
 .advantages-article{
+
   width: 478px;
 height: 554px;
 margin-left: 140px;
@@ -1731,6 +1733,15 @@ display: flex;
 transform: rotate(0.1deg);
 }
 
+.signature-icon{
+  margin-left: 300px;
+  margin-top: 10px;
+  display: flex;
+  width: 85.34px;
+height: 38px;
+align-items: flex-end;
+}
+
 @media(max-width:1200px){
 
   #about2{
@@ -1968,6 +1979,7 @@ line-height: 24px;
 
 display: flex;
 align-items: center;
+margin-left: 41px;
   }
 
   .logo-article-title{
@@ -2005,13 +2017,13 @@ height: 86px;
 
   .adv__title{
     font-weight: 600;
-font-size: 20px;
+font-size: 19px;
 line-height: 25px;
   }
 
   .adv_text{
     font-weight: 400;
-font-size: 12px;
+font-size: 11px;
 
   }
 
@@ -2030,6 +2042,9 @@ font-size: 12px;
     
     margin-top: 100px;
     align-items: center;
+  }
+  .signature-icon{
+    margin-left: 250px;
   }
 
   
@@ -2052,6 +2067,31 @@ font-size: 12px;
 
 @media(max-width:550px){
 
+  
+  .free-trial__title{
+
+    font-weight: 800;
+font-size: 25px;
+line-height: 40px;
+
+  }
+
+  .main-text__title{
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+    width: 340px;
+
+  }
+
+  .main-text__p{
+
+    font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+  }
+
   .footer{
     display: flex;
   }
@@ -2061,12 +2101,10 @@ font-size: 12px;
   }
 
   .video{
-    margin-left: 0;
-    margin-right: 40px;
+
+    margin-left: 0px;
   }
- .main-back{
- right: -135px;
- }
+
  .iframe{
   width: 350px;
 height: 204px;
@@ -2194,8 +2232,34 @@ color: #FB4949;
 
 @media(max-width:420px){
 
+
+ .article-title{
+  font-weight: 800;
+font-size: 32px;
+line-height: 40px;
+ }
+  /* .adv-group{
+    margin-right: 180px;
+  } */
+  .adv-group .swiper-slide{
+    opacity: 1;
+  }
+
+  .main-back{
+    left: -170px;
+  }
+  .iframe{
+    margin-left: 0;
+  }
+  .contractbtn{
+    font-weight: 700;
+font-size: 17px;
+line-height: 20px;
+  }
+
+
   .footer-logo{
-    margin-left: 88px;
+    margin-left: 105px;
   }
   .navbar{
     width: 370px;
@@ -2211,7 +2275,7 @@ font-size: 32px;
 line-height: 40px;
 /* or 125% */
 
-display: flex;
+
 align-items: center;
 text-align: center;
 

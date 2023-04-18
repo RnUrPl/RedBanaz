@@ -354,7 +354,7 @@
                 <span class="advantages-title">Don't lose your <span class="purpletxt"> &nbsp;money</span></span>
                 <div class="advantages-content">
                     <div class="adv-wrap">
-                        <div class="swiper-container">
+                        <div class="swiper-container myslide">
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                 <img src="./public/free-trial---1-1@2x.png" class="mom">
@@ -381,10 +381,10 @@
                             <div id="adv2" class="adv">
                                 <div class="adv__title">Contract<br/>conclusion</div>
                                 <div class="adv_text">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;We enter into ,<br/>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;a contract with <br/>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;client and send the<br/>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;original to you
+                                   We enter into ,<br/>
+                                   a contract with <br/>
+                                   client and send the<br/>
+                                    original to you
                                 </div>
                             </div>
                             <div id="adv3" class="adv">
@@ -396,6 +396,8 @@
                                 </div>
                             </div>
                         </div>
+                            
+                        
                         <a href="contract.pdf" target="_blank" class="contractbtn">
                             <span class="contractbtn_text">VIEW CONTRACT</span>
                         </a>
@@ -423,6 +425,7 @@
                                 <div class="logo-article-text">of Red Bananaz</div>
                             </div>
                         </div>
+                        <img class="signature-icon" alt="" src="./public/signature.svg" />
                     </div>
                 </div>
             </div>
@@ -709,7 +712,7 @@ articleBtn.addEventListener('click', () => {
     
     </script>
     <script>
-  var mySwiper = new Swiper('.swiper-container', {
+  var mySwiper = new Swiper('.myslide', {
   direction: 'horizontal',
   dragClass: 'custom-scrollbar-drag',
     sPerView: 1,
@@ -723,6 +726,18 @@ articleBtn.addEventListener('click', () => {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 function changeDragColor(activeSlide) {
   var dragEl = document.querySelector('.swiper-scrollbar-drag');
@@ -909,6 +924,13 @@ advBlocks3.addEventListener('click', () => {
 mySwiper.slideTo(2);
 });
 
+
+            </script>
+            <script>
+
+           
+            </script>
+            <script>
 
             </script>
 </html>
