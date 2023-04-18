@@ -2047,9 +2047,10 @@ font-size: 12px;
 
   .video{
     margin-left: 0;
+    margin-right: 40px;
   }
  .main-back{
- right: -155px;
+ right: -135px;
  }
  .iframe{
   width: 350px;
