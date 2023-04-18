@@ -2306,6 +2306,12 @@ color: #8B8EA9;
   }
 }
 
+@media(max-width:400px){
+  .adv_text{
+    font-size: 9px;
+  }
+}
+
 @media(max-width:390px){
 
   .redbananaz {
