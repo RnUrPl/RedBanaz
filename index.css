@@ -2317,9 +2317,31 @@ color: #FB4949;
   }
 }
 
+.main-text__title__mob{
+  font-family: 'Work Sans';
+font-style: normal;
+  margin-top: 20px;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 40px;
+display: none;
+
+align-items: center;
+
+/* main text */
+
+color: #FDFDFD;
+}
+
 @media(max-width:420px){
 
+.main-text__title__mob{
+  display: block;
+}
 
+.main-text__title{
+  display: none;
+}
 
   .try-now__text{
     font-weight: 700;
