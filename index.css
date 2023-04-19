@@ -92,7 +92,7 @@ color: #FDFDFD;
 .logo{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 20px;
     gap: 9px;
     
@@ -2319,10 +2319,7 @@ color: #FB4949;
 
 @media(max-width:420px){
 
-  .try-now{
-    width: 90.82px;
-height: 28px;
-  }
+
 
   .try-now__text{
     font-weight: 700;
@@ -2347,7 +2344,7 @@ line-height: 40px;
   .main-back{
     width: 600px;
     top:-160px;
-    left: -90px;
+    left: -112px;
   }
   .iframe{
     margin-left: 0;
@@ -2359,6 +2356,7 @@ line-height: 40px;
     margin-left: 105px;
   }
   .navbar{
+    margin-top: 22px;
     width: 100%;
     
 border-radius: 2000px;
