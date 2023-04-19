@@ -995,7 +995,6 @@ flex-direction: row;
 align-items: center;
 padding: 5px 10px;
 margin-right: 25px;
-width: 165px;
 margin-top: 20px;
 
 
@@ -2125,8 +2124,7 @@ line-height: 20px;
 
 
 
-width: 163px;
-height: 30px;
+
   }
 
   .free-trial__title__mob{
