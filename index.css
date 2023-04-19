@@ -523,6 +523,25 @@ align-items: center;
 color: #8B8EA9;
 }
 
+.article-text__mob{
+  display: none;
+  padding-top: 20px;
+  display: flex;
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 21px;
+/* or 117% */
+
+display: flex;
+align-items: center;
+
+/* text */
+
+color: #8B8EA9;
+}
+
 .article-btn{
     cursor: pointer;
     display: flex;
@@ -1268,6 +1287,22 @@ text-align: center;
 color: #FDFDFD;
 }
 
+.free-trial__title__mob{
+  display: none;
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 40px;
+
+/* or 118% */
+
+align-items: center;
+text-align: center;
+
+color: #FDFDFD;
+}
+
 .free-trial__offer-group{
   display: flex;
   flex-direction: row;
@@ -1511,7 +1546,7 @@ font-size: 40px;
 line-height: 47px;
 /* identical to box height, or 118% */
 position: absolute;
-display: flex;
+
 align-items: center;
 text-align: center;
 
@@ -2076,14 +2111,49 @@ font-size: 11px;
 
 @media(max-width:550px){
 
-  
-  .free-trial__title{
-
-    font-weight: 800;
-font-size: 23px;
-line-height: 40px;
-
+  .contractbtn_text{
+    font-weight: 700;
+font-size: 16px;
+line-height: 20px;
   }
+
+  .contractbtn{
+
+
+
+width: 163px;
+height: 30px;
+  }
+
+  .free-trial__title__mob{
+    display: block;
+  }
+
+  .free-trial__title{
+    display: none;
+  }
+
+  .reviews-section{
+    margin-top: 100px;
+  }
+
+  #about3{
+    padding-top: 30px;
+  }
+
+  .about-item{
+    padding-top:80px ;
+  }
+
+  .article-text{
+    display: none;
+  }
+
+  .article-text__mob{
+    display: flex;
+  }
+
+
 
   .main-text__title{
     margin-top: 20px;
@@ -2266,12 +2336,7 @@ line-height: 40px;
   .iframe{
     margin-left: 0;
   }
-  .contractbtn{
-    font-weight: 700;
-font-size: 17px;
-line-height: 20px;
 
-  }
 
 
   .footer-logo{
