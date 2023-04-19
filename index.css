@@ -25,6 +25,8 @@ body {
     font-family: 'Kodchasan','Work Sans','Libre Baskerville', sans-serif;
     background-color: #24213A;
     margin: 0;
+    display: flex;
+    flex-direction: column;align-items: center;
   }
 
   ul {
@@ -189,7 +191,7 @@ color: #FDFDFD;
       
     
     display: flex;
-    width: 98px;
+
 height: 26px;
 
     background: #7666FF;
@@ -203,7 +205,7 @@ margin-top: 15px;
 
 
 display: flex;
-width: 98px;
+
 height: 26px;
 
 background: red;
@@ -2054,7 +2056,7 @@ height: 86px;
 
 
   .navbar{
-    width: 700px;
+    width: 100%;
   }
 
   .main-text{
@@ -2294,7 +2296,7 @@ color: #FB4949;
  
 
   .navbar{
-    width: 500px;
+    width: 100%;
     
   }
  
@@ -2317,6 +2319,15 @@ color: #FB4949;
 }
 
 @media(max-width:420px){
+
+  .try-now{
+    width: 90.82px;
+height: 28px;
+  }
+
+  .try-now__text{
+ width: 100%;
+  }
 
 
  .article-title{
@@ -2347,7 +2358,7 @@ line-height: 40px;
     margin-left: 105px;
   }
   .navbar{
-    width: 410px;
+    width: 100%;
     
 border-radius: 2000px;
   }
@@ -2427,7 +2438,7 @@ color: #FB4949;
  
 
   .navbar{
-    width: 320px;
+    width: 100%;
     
   }
  
