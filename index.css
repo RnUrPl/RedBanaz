@@ -438,7 +438,8 @@ font-weight: 400;
 font-size: 16px;
 line-height: 19px;
 /* or 119% */
-
+width: 290px;
+height: 95px;
 display: flex;
 align-items: center;
 text-align: center;
@@ -946,7 +947,7 @@ margin-left: 20px;
 }
 
 .reviews-img{
-  width: 1247px;
+  max-width: 1247px;
   margin-top: 40px;
 
 }
@@ -1793,7 +1794,24 @@ height: 38px;
 align-items: flex-end;
 }
 
-@media(max-width:1200px){
+@media(max-width:1250px){
+  .reviews-img_mob{
+    display: flex;
+  }
+  .reviews-img{
+    display: none;
+  }
+ 
+  .iframe{
+    margin-left: 55px;
+    margin-bottom: 30px;
+  }
+  .main-section{
+    
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
 
   #about2{
     display: flex;
@@ -1835,6 +1853,10 @@ align-items: flex-end;
 
   .hidden-item3{
     margin-top: 660px;
+  }
+  .main-text{
+    text-align: center;
+    align-items: center;
   }
 }
 @media(max-width:1000px){
@@ -2002,6 +2024,7 @@ color: #4F4D67;
     flex-direction: column-reverse;
     align-items: center;
   }
+ 
 }
 @media(max-width:768px){
 
@@ -2061,10 +2084,7 @@ height: 86px;
     width: 100%;
   }
 
-  .main-text{
-    text-align: center;
-    align-items: center;
-  }
+
 
   .adv__title{
     font-weight: 600;
@@ -2078,12 +2098,7 @@ font-size: 11px;
 
   }
 
-  .main-section{
-    
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
-  }
+
 
   .navbar-list{ 
     display: none;
@@ -2208,12 +2223,7 @@ height: 204px;
     width: 345px;
     height: 160px;
   }
-  .reviews-img_mob{
-    display: flex;
-  }
-  .reviews-img{
-    display: none;
-  }
+ 
   .rectangle{
     height: 237px;
     width: 344px;
@@ -2312,6 +2322,10 @@ color: #FB4949;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+  }  .main-back{
+
+ 
+    left: -77px;
   }
 
 
@@ -2345,6 +2359,9 @@ color: #FDFDFD;
 .main-text__title{
   display: none;
 }
+.iframe{
+  margin-left: 0;
+}
 
   .try-now__text{
     font-weight: 700;
@@ -2371,9 +2388,7 @@ line-height: 40px;
     top:-160px;
     left: -112px;
   }
-  .iframe{
-    margin-left: 0;
-  }
+ 
 
 
 
