@@ -526,7 +526,7 @@ color: #8B8EA9;
 .article-text__mob{
   display: none;
   padding-top: 20px;
-  display: flex;
+
   font-family: 'Work Sans';
 font-style: normal;
 font-weight: 400;
@@ -534,7 +534,7 @@ font-size: 15px;
 line-height: 21px;
 /* or 117% */
 
-display: flex;
+
 align-items: center;
 
 /* text */
