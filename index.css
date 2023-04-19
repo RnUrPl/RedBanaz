@@ -231,7 +231,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 16px;
 /* identical to box height, or 114% */
-padding-left: 20px;
+padding: 15px;
 
 align-items: center;
 text-transform: uppercase;
