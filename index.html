@@ -144,7 +144,7 @@
                     </div>
                     <div id="btn1" class="article-btn">
                         <span id="learn1"class="learn-more">LEARN MORE</span>
-                        <img class="arrow-icon" alt="" src="./public/arrow5.svg" />
+                        <img id="12"class="arrow-icon" alt="" src="./public/arrow5.svg" />
                     </div>
                    <div id="hid-text" class="article-hiiddentext">
                     Thanks to our many years of experience in the 
@@ -212,7 +212,7 @@
                     </div>
                     <div id="btn2" class="article-btn">
                         <span id="learn2"class="learn-more2">HOW IT WORKS</span>
-                        <img class="arrow-icon" alt="" src="./public/arrow1.svg" />
+                        <img id="13"class="arrow-icon" alt="" src="./public/arrow1.svg" />
                     </div>
                     <div id="hid-text2" class="article-hiiddentext">
                         With each of your purchases, we set aside 15 
@@ -305,7 +305,7 @@
                     </div>
                     <div id="btn3" class="article-btn">
                         <span id="learn3"class="read-more">READ MORE</span>
-                        <img class="arrow-icon" alt="" src="./public/arrow2.svg" />
+                        <img id="14" class="arrow-icon" alt="" src="./public/arrow2.svg" />
                     </div>
                    <div id="hid-text3" class="article-hiiddentext">
                     From the very beginning of our practice in the 
@@ -660,7 +660,7 @@
                 <img class="vector-icon" alt="" src="./public/vector.svg" />
                 <a href="https://t.me/+xJ0zlPFscFgyMzRi" target="_blank" class="redbananaz">RedBananaz</a>
               </div>
-            <ul class="navbar-list" >
+            <ul class="navbar-list_footer" >
                 <li id="pricebtn"class="navbar-list__item" href="#pricing">
                     Price
                 </li>
@@ -802,9 +802,10 @@ let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   const currentScrollPos = window.pageYOffset;
   const navbar = document.getElementById("navbar");
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos  > currentScrollPos) {
     navbar.classList.remove("hidden");
   } else {
+    if(currentScrollPos>900)
     navbar.classList.add("hidden");
   }
   prevScrollPos = currentScrollPos;
@@ -889,15 +890,18 @@ fgBtn.addEventListener('click', () => {
             <script>
                 const myButton = document.getElementById('learn1');
                 const mydiv = document.getElementById('btn1');
+                const mg1 = document.getElementById('12');
 
 let isClicked = false;
 
 mydiv.addEventListener('click', function() {
   if (isClicked) {
     myButton.textContent = 'LEARN MORE';
+    mg1.style.transform = 'scaleX(1)'
     isClicked = false;
   } else {
     myButton.textContent = 'BACK!';
+    mg1.style.transform = 'scaleX(-1)'
     isClicked = true;
   }
 });
@@ -906,15 +910,18 @@ mydiv.addEventListener('click', function() {
                <script>
                 const myButton2 = document.getElementById('learn2');
                 const mydiv2 = document.getElementById('btn2');
+                const mg2 = document.getElementById('13');
 
 let isClicked2 = false;
 
 mydiv2.addEventListener('click', function() {
   if (isClicked2) {
     myButton2.textContent = 'HOW IT WORKS';
+    mg2.style.transform = 'scaleX(1)'
     isClicked2 = false;
   } else {
     myButton2.textContent = 'BACK!';
+    mg2.style.transform = 'scaleX(-1)'
     isClicked2 = true;
   }
 });
@@ -923,14 +930,17 @@ mydiv2.addEventListener('click', function() {
                <script>
                 const myButton3 = document.getElementById('learn3');
                 const mydiv3 = document.getElementById('btn3');
+                const mg3 = document.getElementById('14');
 let isClicked3 = false;
 
 mydiv3.addEventListener('click', function() {
   if (isClicked3) {
     myButton3.textContent = 'READ MORE';
+    mg3.style.transform = 'scaleX(1)'
     isClicked3 = false;
   } else {
     myButton3.textContent = 'BACK!';
+    mg3.style.transform = 'scaleX(-1)'
     isClicked3 = true;
   }
 });

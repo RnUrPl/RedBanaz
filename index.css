@@ -157,6 +157,13 @@ color: #FDFDFD;
   
 
 }
+.navbar-list_footer{
+  /* margin-left: 200px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
 
 .navbar-list__item{
     margin-right: 32px;
@@ -339,7 +346,7 @@ color: #8B8EA9;
 .video{
   align-items: center;
     flex:1;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 .video-container{
 
@@ -352,7 +359,7 @@ display: flex;
 }
 
 .iframe{
-  margin-left: 55px;  
+
   box-sizing: border-box;
 
 
@@ -377,6 +384,7 @@ width: 725px;
 height: 725px;
 z-index: -1;
 top:-50px;
+right: 2px;
 
 
 background: linear-gradient(180deg, #3B3756 0%, #24213A 57.54%);
@@ -1774,7 +1782,6 @@ width: 100%;
 }
 
 .footer{
-
 display: flex;
   flex-direction: row;
 }
@@ -1796,6 +1803,18 @@ align-items: flex-end;
 
 @media(max-width:1250px){
 
+ 
+.main-back{
+  display: none;
+
+
+}
+
+  .footer{
+    align-items: center;
+  }
+
+ 
   .try-now__red{
     display: none;
   }
@@ -1929,8 +1948,38 @@ height: 86px;
     text-align: center;
     align-items: center;
   }
+  .hidden-item{
+
+    margin-top: 520px;
+    display: none;
+    flex-direction: column;
+    height: 285px;
+    width: 100%;
+  }
+
+
+  .hidden-item3{
+    margin-top: 780px;
+    display: none;
+    flex-direction: column;
+    height: 285px;
+    width: 100%;
+  }
+  .video{
+
+    margin-left: 0px;
+  }
+
+  .iframe{
+    margin-left: 0;
+  }
+
+
 }
 @media(max-width:1180px){
+
+ 
+  
 
   .advantages-content{
     align-items: center;
@@ -1990,24 +2039,7 @@ height: 86px;
     margin-right: 0;
   }
 
-  .hidden-item{
-    margin-left: 200px;
-    margin-top: 520px;
-    display: none;
-    flex-direction: column;
-    height: 285px;
-    width: 350px;
-  }
-
-
-  .hidden-item3{
-    margin-top: 780px;
-    display: none;
-    flex-direction: column;
-    height: 285px;
-    width: 350px;
-  }
-
+ 
   .free-trial{
     align-items: center;
   }
@@ -2093,22 +2125,25 @@ color: #4F4D67;
     flex-direction: column-reverse;
     align-items: center;
   }
+  .foooter-section{
+    margin-top: 0;
+  }
  
 }
 @media(max-width:768px){  
  
   .main-back{
 
- 
+    margin-left: 55px;
     left: 0px;
   }
-
-
-  .video{
-
-    margin-left: 0px;
+  .navbar-list_footer{
+    display: none;
   }
 
+
+
+  
   
   .iframe{
     width: 450px;
@@ -2138,6 +2173,9 @@ color: #4F4D67;
 
 
 @media(max-width:570px){
+ 
+
+  
   .adv__title{
     font-weight: 600;
 font-size: 19px;
@@ -2366,6 +2404,15 @@ color: #FDFDFD;
 }
 
 @media(max-width:420px){
+  .main-back{
+    display: flex;
+  }
+  .hidden-item{
+    width: 350px;
+  }
+  .hidden-item3{
+    width: 350px;
+  }
 
 .main-text__title__mob{
   display: block;
